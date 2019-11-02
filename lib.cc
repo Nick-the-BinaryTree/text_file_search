@@ -1,3 +1,5 @@
+#include "porter/porter2_stemmer.cpp"
+
 #include <iostream>
 #include <fstream>
 #include <map>
@@ -8,7 +10,7 @@ using namespace std;
 
 typedef map<string, set<string>> inverted_index;
 
-inverted_index addFile(string fileName) {
+inverted_index addFile(string fileName, bool shouldStem=false) {
     inverted_index invertedIndex;
     ifstream file;
     string word;
@@ -16,6 +18,9 @@ inverted_index addFile(string fileName) {
     try {
         file.open(fileName);
         while (file >> word) {
+            if (shouldStem) {
+                Porter2Stemmer::stem(word);
+            }
             if (invertedIndex.count(word) == 0) {
                 invertedIndex[word] = set<string>();
             }

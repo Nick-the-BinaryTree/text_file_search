@@ -3,4 +3,8 @@
 
 CMakeFiles/executeTests.dir/lib_test.cc.o: lib.cc
 CMakeFiles/executeTests.dir/lib_test.cc.o: lib_test.cc
+CMakeFiles/executeTests.dir/lib_test.cc.o: porter/porter2_stemmer.cpp
+CMakeFiles/executeTests.dir/lib_test.cc.o: porter/porter2_stemmer.h
+CMakeFiles/executeTests.dir/lib_test.cc.o: porter/util/hash.h
+CMakeFiles/executeTests.dir/lib_test.cc.o: porter/util/string_view.h
 

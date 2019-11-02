@@ -4,3 +4,7 @@
 CMakeFiles/executeTests.dir/lib_test.cc.o
  /home/nick/Desktop/file_searcher/lib.cc
  /home/nick/Desktop/file_searcher/lib_test.cc
+ /home/nick/Desktop/file_searcher/porter/porter2_stemmer.cpp
+ /home/nick/Desktop/file_searcher/porter/porter2_stemmer.h
+ /home/nick/Desktop/file_searcher/porter/util/hash.h
+ /home/nick/Desktop/file_searcher/porter/util/string_view.h

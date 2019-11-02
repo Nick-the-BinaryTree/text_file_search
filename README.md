@@ -3,6 +3,7 @@
 Add files to program.
 Then see which ones contain a term you search for.
 
+Borrowed this man's stemmer: https://github.com/smassung/porter2_stemmer/blob/master/porter2_stemmer.h
 
          _nnnn_                      
         dGGGGMMb     ,"""""""""""""".
