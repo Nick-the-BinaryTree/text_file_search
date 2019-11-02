@@ -12,14 +12,6 @@ Then see which ones contain a term you search for.
       JS^\__/  qKL
      dZP        qKRb
     dZP          qKKb
-   fZP            SMMb
-   HZM            MMMM
-   FqM            MMMM
- __| ".        |\dS"qML
- |    `.       | `' \Zq
-_)      \.___.,|     .'
-\____   )MMMMMM|   .'
-     `-'       `--' hjm
 
 
 
