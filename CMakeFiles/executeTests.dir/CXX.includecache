@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nick/Desktop/file_searcher/lib.cc
+iostream
+-
+fstream
+-
+map
+-
+set
+-
+vector
+-
+
+/home/nick/Desktop/file_searcher/lib_test.cc
+lib.cc
+/home/nick/Desktop/file_searcher/lib.cc
+gtest/gtest.h
+-
+

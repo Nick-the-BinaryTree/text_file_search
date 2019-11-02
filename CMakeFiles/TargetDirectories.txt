@@ -1,0 +1,3 @@
+/home/nick/Desktop/file_searcher/CMakeFiles/rebuild_cache.dir
+/home/nick/Desktop/file_searcher/CMakeFiles/executeTests.dir
+/home/nick/Desktop/file_searcher/CMakeFiles/edit_cache.dir
