@@ -1,7 +1,9 @@
 # Text File Search
 
-Add files to program.
-Then see which ones contain a term you search for.
+Add files, and their text will be added to an inverted index of terms.
+Afterwards, you can launch queries for which files contain terms.
+
+***
 
 Borrowed this man's stemmer: https://github.com/smassung/porter2_stemmer/blob/master/porter2_stemmer.h
 
@@ -10,6 +12,7 @@ Install gtkmm, and run `./launch` to use GUI.
 
 `make` rebuilds `executeTests`.
 Run `./executeTests` to run Google Tests.
+
 
          _nnnn_                      
         dGGGGMMb     ,"""""""""""""".
