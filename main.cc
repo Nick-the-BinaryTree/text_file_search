@@ -1,19 +1,16 @@
-#include "lib.cc"
+#include "gui.cc"
 
+#include <gtkmm/application.h>
 #include <iostream>
 
 using namespace std;
 
-typedef map<string, set<string>> inverted_index;
+int main(int argc, char *argv[])
+{
+  auto app = Gtk::Application::create(argc, argv, "org.gtkmm.example");
 
-int main() {
-    inverted_index ii = addFile("banana_recipe.txt", true);
-    printInvertedIndex(ii);
-    ii = mergeIndices(ii, addFile("story_of_a_fish.txt"));
+  GUI window;
 
-    vector<string> res = searchTerm("banana", ii);
-    res = searchTerm("fish", ii);
-    res = searchTerm("a", ii);
-
-    return 0;
+  //Shows the window and returns when it is closed.
+  return app->run(window);
 }

@@ -15,21 +15,23 @@ inverted_index addFile(string fileName, bool shouldStem=false) {
     ifstream file;
     string word;
 
-    try {
-        file.open(fileName);
-        while (file >> word) {
-            if (shouldStem) {
-                Porter2Stemmer::stem(word);
-            }
-            if (invertedIndex.count(word) == 0) {
-                invertedIndex[word] = set<string>();
-            }
-            invertedIndex[word].insert(fileName);
-        }
-        file.close();
-    } catch(...) {
-        cout << "Could not read file." << endl;
+    file.open(fileName);
+
+    if (file.fail()) {
+        throw "Could not find file";
     }
+
+    while (file >> word) {
+        if (shouldStem) {
+            Porter2Stemmer::stem(word);
+        }
+        if (invertedIndex.count(word) == 0) {
+            invertedIndex[word] = set<string>();
+        }
+        invertedIndex[word].insert(fileName);
+    }
+    file.close();
+
     return invertedIndex;
 }
 
@@ -52,6 +54,14 @@ inverted_index mergeIndices(inverted_index a, inverted_index b) {
         }
     }
     return a;
+}
+
+string getSearchResultString(vector<string> words) {
+    string res = "";
+    for (string word : words) {
+        res.append(word).append("\n");
+    }
+    return res;
 }
 
 void printInvertedIndex(inverted_index ii) {
